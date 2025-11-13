@@ -1,25 +1,5 @@
-# n=int(input("enter a number"))
-# i=1
-# while i<=5:
-#     print('*'*5)
-#     i=i+1
-
-
-# n=int(input("enter a number"))
-# i=1
-# while i<=5:
-#  print('*'*i+' '*(n-i) )
-#     print('*'*i)
-#     i=i+1
-
-
-# n=int(input("enter a number"))
-# i=1
-# while i<=n:
-#     print(' '*(n-i)+'*'*i)
-#     i=i+1
-
-
-# n=int(input("enter a number"))
-# i=1
-# while i<=n:
+n=int(input("enter a number : "))
+for  i in  range(1,n+1):
+    for i in range(1,n+1):
+        print(i,end=" ")
+    print()
