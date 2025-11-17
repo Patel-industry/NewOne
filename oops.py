@@ -384,54 +384,225 @@
 
 
 
-class Grandparent:
-    car='nexton'
-    def home(self):
-        print("home from grandparent")
+# class Grandparent:
+#     car='nexton'
+#     def home(self):
+#         print("home from grandparent")
+# class Parent:
+#     bank='ICICI'
+#     def land(self):
+#         print("land from parent")
+# class Child(Parent):
+#     pass
+# obj=Child()
+# print(obj.car,obj.bank)
+# obj.land()
+# obj.home()
+
+
+
+# class Grad:
+#     car ="nexso"
+#     def home(self):
+#         print("home form a GP")
+
+# class Prent(Grad):
+#     bank="ISBT"
+#     def land(self):
+#         print("this is a grad")
+# class child(Prent):
+#     pass
+# obj=child()
+# print(obj.car,obj.bank)
+# obj.land()
+# obj.home()
+
+
+
+
+
+
+
+# 3.multiple inheritance
+
+
+# class Father:
+#     def home (self):
+#         print("from father home")
+#         Mother.home(self)
+# class Mother:
+#     def car(self):
+#         print("car from mother")
+#     def home(self):
+#         print("from mother home")
+#         # Father.home(self)
+# class Child(Father,Mother):
+#      pass
+# obj=Child()
+# obj.car()
+# obj.home()      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#  4. hierearchial inheritance
+
+# class Parent:
+#     def home(self):
+#         print("home from parent")
+#     def car(self):
+#         print("car from parent")
+# class Child1:
+#     pass 
+# class Child2:
+#     pass
+
+# obj1=Child1()
+# obj2=Child2()
+
+# obj1.home() 
+# obj2.car() 
+# obj2.home() 
+# obj1.car()  
+
+
+
+
+# class Parent:
+#     def car(self):
+#         print("from parent car ")
+#     def home(self):
+#         print("from parent home ")
+# class Father(Parent):
+#     def bank(self):
+#         print("child first price")
+# class Mother (Parent):
+#     def land(self):
+#         print("from second child land")
+        
+# class Child (Father,Mother):
+#     pass
+
+# obj1=Father()
+# obj2=Mother()
+# obj1.car()
+# obj2.home()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2.polymorphism
+
+
+
+# class Student:
+#     pass
+# print(dir(Student))
+
+
+
+
+
+# IMP 
+
+
+# inheritance ----->method overloading-------> python supported
+# polymorphism------>method overload,MRO--------->python not supported
+
+
+# class Student:
+#     def add(x,y):
+#         print(x+y)
+#     def add(x,y,z):
+#         print(x+y+z)
+#     def add(x,y,z,p):
+#         print(x+y+z+y)
+# obj=Student
+
+# obj.add(10,20,30,40)
+
+
+
+# 3. Abstraction
+
+# type
+# 1. abtract class 
+
+
+
+# from abc import ABC,abstractmethod
+# class Calculation(ABC):
+#     def add(self,a,b):
+#         print(a+b)
+#     def sub (self,a,b):
+#         print(a-b)
+#     def muli(self,a,b):
+#         print(a*b)
+#     @abstractmethod
+#     def div(self):
+#         pass
+# class Junior(Calculation):
+#     def div(self,a,b):
+#         print(a/b)
+# obj=Junior()
+# obj.div(5,10)
+# obj.add(5,5)
+
+
+
+
+
+
+
+
+
+
+# 4.encapsulation
+
+
+# access specific/modifier's
+
+# 1.public variable/method
+# 2.protected vriable/method   =python not supported
+# 3.private variable/method    =Python not supported
+
+
+
+
 class Parent:
-    bank='ICICI'
-    def land(self):
-        print("land from parent")
+    __bank="hdfc"
+    def __add(self):
+        print("hello")
 class Child(Parent):
     pass
 obj=Child()
-print(obj.car,obj.bank)
-obj.land()
-obj.home()
-
-
-
-class Grad:
-    car ="nexso"
-    def home(self):
-        print("home form a GP")
-
-class Prent(Grad):
-    bank="ISBT"
-    def land(self):
-        print("this is a grad")
-class child(Prent):
-    pass
-obj=child()
-print(obj.car,obj.bank)
-obj.land()
-obj.home()
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# print(obj.__bank)
+# obj.__add()
+# print(Parent.__bank)
+# print(dir(Parent))
+# print(obj.Parent__bank)
+# print(obj._Parent__bank)
 
 
 
